@@ -1,0 +1,20 @@
+
+// CheckBox
+function terms_changed(termsCheckBox) {
+  if (termsCheckBox.checked) {
+    document.getElementById("submit_button").disabled = false;
+  } else {
+    document.getElementById("submit_button").disabled = true;
+  }
+}
+
+// Confirm password
+function validate() {
+  var password = document.getElementById("exampleInputPassword1").value;
+  var confirmPassword = document.getElementById("exampleInputPassword2").value;
+  if (password != confirmPassword) {
+    alert("Passwords do not match.");
+    return false;
+  }
+  return true;
+}
